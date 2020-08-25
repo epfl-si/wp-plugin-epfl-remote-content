@@ -3,7 +3,7 @@
 Plugin Name: EPFL Remote Content Shortcode
 Description: Embed remote content with a shortcode
 Author: EPFL SI (originally Justin Silver)
-Version: 1.0.0
+Version: 1.1.0
 */
 
 if ( ! class_exists( 'RemoteContentShortcode' ) ):
