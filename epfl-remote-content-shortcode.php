@@ -3,7 +3,7 @@
 Plugin Name: EPFL Remote Content Shortcode
 Description: Embed remote content with a shortcode
 Author: EPFL SI (originally Justin Silver)
-Version: 1.1.0
+Version: 1.2.0
 */
 
 if ( ! class_exists( 'RemoteContentShortcode' ) ):
@@ -42,7 +42,7 @@ class RemoteContentShortcode {
 	private function get_encoding($headers)
 	{
 	    // Encoding used by default when nothing is specified in header
-	    $default_encoding = "ISO-8859-1";
+	    $default_encoding = "UTF-8";
 
         // In normal cases, this index should be present in header but we test just in case...
 	    if(!array_key_exists('Content-Type', $headers)) return $default_encoding;
