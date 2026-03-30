@@ -212,8 +212,6 @@ class RemoteContentShortcode {
 
 			// Getting header size for later
 			if($response) $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
-			// close the resource
-			curl_close( $ch );
 
 			if ( $response ){
 
